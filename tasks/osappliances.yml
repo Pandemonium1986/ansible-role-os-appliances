@@ -50,13 +50,13 @@
     name:                 "{{ osappliances_openstack_project_name }}-key"
     state:                present
   register:               res_os_keypair
-- name:                   "Ensure that the public key is backed up if it has been created"
+- name:                   "Ensure that the public key is backed up if it has been created" # yamllint disable-line rule:line-length
   copy:
     content:              "{{ res_os_keypair.key.public_key }}"
     dest:                 "~/.ssh/{{ osappliances_openstack_project_name }}.pub"
     mode:                 '0644'
-  when:                   res_os_keypair.changed|bool == true
-- name:                   "Ensure that the private key is backed up if it has been created"
+  when:                   res_os_keypair.changed
+- name:                   "Ensure that the private key is backed up if it has been created" # yamllint disable-line rule:line-length
   copy:
     content:              "{{ res_os_keypair.key.private_key }}"
     dest:                 "~/.ssh/{{ osappliances_openstack_project_name }}"
