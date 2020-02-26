@@ -1,2 +1,10 @@
 ---
-# tasks file for ansible-role-os-appliances
+- name:            Ensure os-osappliances tasks are performed for osappliances_users # yamllint disable-line rule:line-length
+  include_tasks:
+    file:          osappliances.yml
+    apply:
+      become:      true
+      become_user: "{{ user }}"
+  loop:            "{{ osappliances_users }}"
+  loop_control:
+    loop_var:      user

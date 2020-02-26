@@ -1,2 +1,5 @@
 ---
-# defaults file for ansible-role-os-appliances
+osappliances_users:
+  - pandemonium
+osappliances_openstack_project_name: "pandama"
+osappliances_os_router_network:      "external-public"
