@@ -1,8 +1,5 @@
 ---
-- name:                   Converge
-  hosts:                  all
-  vars:
-    osrequirements_users:
-      - pandemonium
+- name:  Converge
+  hosts: all
   roles:
-    - role:               ansible-role-os-appliances
+    - role: ansible-role-os-appliances
