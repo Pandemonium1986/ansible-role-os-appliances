@@ -30,6 +30,7 @@ From defaults/main.yml :
 ```yaml
 osappliances_users:
   - pandemonium
+osappliances_cidr: "192.168.66.0/24"
 osappliances_openstack_project_name: "pandama"
 osappliances_os_router_network:      "external-public"
 ```
