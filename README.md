@@ -1,9 +1,10 @@
 # Ansible role : OpenStack Appliances
 
-![](https://img.shields.io/github/release/Pandemonium1986/ansible-role-os-appliances.svg)
-![](https://img.shields.io/github/repo-size/Pandemonium1986/ansible-role-os-appliances.svg)
-![](https://img.shields.io/github/release-date/Pandemonium1986/ansible-role-os-appliances.svg)
-![](https://img.shields.io/github/license/Pandemonium1986/ansible-role-os-appliances.svg)
+![Ansible Role](https://img.shields.io/ansible/role/46871?logo=ansible)
+![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/Pandemonium1986/ansible-role-os-appliances?logo=gitlab)
+![GitHub release](https://img.shields.io/github/release/Pandemonium1986/ansible-role-os-appliances.svg?logo=github)
+![Github license](https://img.shields.io/github/license/Pandemonium1986/ansible-role-os-appliances.svg?logo=github)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/46871?logo=ansible)
 
 Configure the resources needed for an OpenStack project.
 
@@ -30,6 +31,7 @@ From defaults/main.yml :
 ```yaml
 osappliances_users:
   - pandemonium
+osappliances_cidr: "192.168.66.0/24"
 osappliances_openstack_project_name: "pandama"
 osappliances_os_router_network:      "external-public"
 ```

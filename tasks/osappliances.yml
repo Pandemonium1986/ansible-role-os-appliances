@@ -10,7 +10,7 @@
     name:                 "{{ osappliances_openstack_project_name }}-snet"
     state:                present
     network_name:         "{{ osappliances_openstack_project_name }}-net"
-    cidr:                 192.168.86.0/24
+    cidr:                 "{{ osappliances_cidr }}"
     enable_dhcp:          true
 - name:                   "Ensure openstack router is created"
   os_router:
