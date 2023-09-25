@@ -8,13 +8,17 @@
 
 Configure the resources needed for an OpenStack project.
 
--   network
--   subnet
--   router
--   security_group
--   security_group_rules
--   keypair
--   server_group
+- network
+- subnet
+- router
+- security_group
+- security_group_rules
+- keypair
+- server_group
+
+## Disclaimer
+
+!!! This images is no longer support.!!!
 
 ## Requirements
 
@@ -38,7 +42,7 @@ osappliances_os_router_network:      "external-public"
 
 ## Dependencies
 
--   pandemonium1986.os_requirements
+- pandemonium1986.os_requirements
 
 ## Example Playbook
 
@@ -57,4 +61,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## Author Information
 
--   **Michael Maffait** - _Initial work_ - [Pandemonium1986](https://github.com/Pandemonium1986)
+- **Michael Maffait** - _Initial work_ - [Pandemonium1986](https://github.com/Pandemonium1986)
